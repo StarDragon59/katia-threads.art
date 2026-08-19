@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Екатерина Борисова — гобелены на заказ в Перми</title>
+    <meta name="description" content="Закажите ручное ткачество и ковровую вышивку у художницы Екатерины Борисовой. Гобелены для интерьера, обучение, мастер-классы в Перми и онлайн." />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== ШАПКА С БУРГЕРОМ ===== -->
+    <header class="header">
+        <div class="container header__inner">
+            <div class="logo"><a href="#home">Екатерина Борисова</a></div>
+
+            <!-- Кнопка-бургер -->
+            <button class="burger" id="burgerBtn" aria-label="Меню" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Навигация -->
+            <nav class="nav" id="mainNav">
+                <a href="#about">О художнике</a>
+                <a href="#directions">Направления</a>
+                <a href="#workshop">Мастер-классы</a>
+                <a href="#portfolio">Портфолио</a>
+                <a href="#exhibitions">Выставки</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== ГЕРОЙ ===== -->
+    <section class="hero" id="home">
+        <div class="container hero__content">
+            <h1 class="hero__title">Тканые истории.<br />Гобелены и вышивка Екатерины Борисовой</h1>
+            <p class="hero__subtitle">Художник из Перми. Член Союза художников России, выпускница Академии Штиглица.</p>
+            <p class="hero__description">
+                Екатерина создаёт интерьерные гобелены, которые работают как мягкая акустика, зонируют пространство и добавляют тактильность минималистичным интерьерам. Работы хранятся в частных коллекциях в России и Европе.
+            </p>
+            <div class="hero__buttons">
+                <a href="#portfolio" class="btn btn--primary">В галерею тканых историй</a>
+                <a href="#contacts" class="btn btn--secondary">Рассчитать стоимость вашего панно</a>
+            </div>
+            <div class="hero__trust">
+                <div class="trust-item">✧ Член Союза художников России</div>
+                <div class="trust-item">✧ Образование: СПГХПА им. А. Л. Штиглица</div>
+                <div class="trust-item">✧ Работы в коллекциях по всему миру</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== О ХУДОЖНИКЕ ===== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section__title">О художнике</h2>
+            <div class="about__inner">
+                <div class="about__content">
+                    <p>Екатерина Борисова родилась и живёт в Перми. Она работает в техниках ручного ткачества и ковровой вышивки специальной иглой (punch needle). Её гобелены не только украшают стену — ещё они:</p>
+                    <ul style="margin: 15px 0 20px 20px; list-style: disc; line-height: 1.8;">
+                        <li>поглощают эхо, делая комнату тише и уютнее;</li>
+                        <li>визуально зонируют пространство без перегородок;</li>
+                        <li>добавляют интерьеру тактильность, которую хочется трогать.</li>
+                    </ul>
+                    <p>Художница принимает заказы на уникальные панно по индивидуальным размерам и цветам. Срок изготовления — от 2 до 6 недель. Цена: от 7 000 ₽ за камерные работы, крупные интерьерные полотна — от 80 000 ₽ (зависит от размера и сложности).</p>
+                    <div class="about__fact">
+                        <strong>🛠️ Секрет мастерства:</strong> обыкновенная столовая вилка — главный инструмент Екатерины для идеально ровной поверхности гобелена.
+                    </div>
+                    <p>Если вы хотите заказать гобелен или вышивку, напишите Екатерине в сообществе VK или на электронную почту.</p>
+                </div>
+                <div class="about__photo-wrapper">
+                    <div class="about__carousel" id="aboutCarousel">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active">
+                                <img src="images/workshop/photo1.jpg" alt="Екатерина за ткацким станком" loading="lazy" width="400" height="400" />
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/workshop/photo2.jpg" alt="Екатерина с гобеленом" loading="lazy" width="400" height="400" />
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/workshop/photo3.jpg" alt="Екатерина в мастерской" loading="lazy" width="400" height="400" />
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/workshop/photo4.jpg" alt="Екатерина в мастерской с рабочим инструментом" loading="lazy" width="400" height="400" />
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/workshop/photo5.jpg" alt="Екатерина за работой" loading="lazy" width="400" height="400" />
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-btn--prev">‹</button>
+                        <button class="carousel-btn carousel-btn--next">›</button>
+                        <div class="carousel-indicators">
+                            <span class="carousel-dot active" data-index="0"></span>
+                            <span class="carousel-dot" data-index="1"></span>
+                            <span class="carousel-dot" data-index="2"></span>
+                            <span class="carousel-dot" data-index="3"></span>
+                            <span class="carousel-dot" data-index="4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ТРИ НАПРАВЛЕНИЯ ===== -->
+    <section id="directions" class="section">
+        <div class="container">
+            <h2 class="section__title">Три направления, в которых живёт искусство Екатерины Борисовой</h2>
+            <p style="text-align:center; max-width:800px; margin:0 auto 40px; font-size:1.1rem; color:#4A4540;">
+                Искусство Екатерины многогранно — от крупных галерейных полотен до камерных этюдов и живописи. Каждое направление имеет свой масштаб и характер.
+            </p>
+            <div class="grid-3">
+                <div class="service-card">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C69B6D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+    <polyline points="21 15 16 10 5 21"></polyline>
+</svg>
+                    <h3>Большие гобелены</h3>
+                    <p>Масштабные, фактурные работы в технике ручного ткачества. Задают тон интерьеру, становятся центром притяжения в гостиной, холле или общественном пространстве. <strong>Заказать большой гобелен в Перми</strong> можно по индивидуальному проекту.</p>
+                    <div class="direction-meta">
+                        <span>Размер: от 70×100 см и более</span>
+                        <span>Срок: от 8 недель</span>
+                        <span>Цена: по запросу</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <span style="display:block; text-align:center; margin-bottom:15px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C69B6D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12c2-3 4-6 6-4s4 4 6 4 4-3 6-4"/>
+        </svg>
+    </span>
+                    <h3>Камерные гобелены и punch needle</h3>
+                    <p>Лёгкие, тактильные работы, создающие уют в спальне, детской или небольшой гостиной. Техника ковровой вышивки придаёт им пушистость и «домашность». Идеальный <strong>подарок любителю декора</strong>.</p>
+                    <div class="direction-meta">
+                        <span>Размер: от 25×30 до 50×60 см</span>
+                        <span>Срок: 1–3 недели</span>
+                        <span>Цена: от 4 000 ₽</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C69B6D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle>
+    <path d="M12 2v20"></path>
+    <path d="M12 12l8-8"></path>
+</svg>
+    <h3>Живописные этюды</h3>
+    <p>Работы маслом и акрилом на холсте — это и самостоятельные произведения, и основа для будущих гобеленов. Они помогают уловить настроение и цвет, которые затем переходят в текстиль. <strong>Авторский текстиль для дома</strong> часто рождается именно из таких этюдов.</p>
+    <div class="direction-meta">
+        <span>Форматы: от 30×40 до 60×80 см</span>
+        <span>Техника: масло, акрил</span>
+        <span>Цена: от 7 000 ₽</span>
+    </div>
+</div>
+            </div>
+            <p style="text-align:center; margin-top:40px;">
+                <a href="#contacts" class="btn btn--primary">Обсудить ваш заказ</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== МАСТЕР-КЛАССЫ ===== -->
+<section id="workshop" class="section section--dark">
+    <div class="container">
+        <h2 class="section__title">Обучение ткачеству и вышивке</h2>
+        <div style="max-width:800px; margin:0 auto;">
+            <p style="font-size:1.1rem; text-align:center; margin-bottom:30px;">
+                Хотите научиться создавать фактурные панно своими руками? Екатерина проводит мастер-классы для взрослых и детей:
+            </p>
+            <div class="workshop-grid">
+                <div class="service-card" style="text-align:left;">
+                    <h3>💻 Онлайн-занятие</h3>
+                    <ul style="list-style:disc; padding-left:20px; line-height:1.8;">
+                        <li>Длительность: 1,5 часа</li>
+                        <li>Пошаговое видео и обратная связь</li>
+                    </ul>
+                    <div class="direction-meta" style="margin-top:15px; border-top:1px solid #eee; padding-top:15px;">
+                        <span>Цена: 1 500 ₽ (Индивидуально)</span>
+                    </div>
+                </div>
+                <div class="service-card" style="text-align:left;">
+                    <h3>🏠 Офлайн в Перми</h3>
+                    <ul style="list-style:disc; padding-left:20px; line-height:1.8;">
+                        <li>Длительность: 3 часа</li>
+                        <li>Все материалы предоставляются</li>
+                        <li>Чай и уютная атмосфера</li>
+                    </ul>
+                    <div class="direction-meta" style="margin-top:15px; border-top:1px solid #eee; padding-top:15px;">
+                        <span>Цена: 2 500 ₽ (группа до 4 чел.)</span>
+                        <span>Индивидуально: 5 000 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align:center; font-size:0.95rem; color:#4A4540;">✔️ В результате вы создадите готовое панно 20×20 см с нуля, освоите технику и получите лайфхаки от профессионала.</p>
+            <p style="text-align:center; margin-top:20px;">
+                <a href="#contacts" class="btn btn--primary">Записаться на мастер-класс</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+    <!-- ===== ПОЧЕМУ ВЫБИРАЮТ ===== -->
+    <section class="benefits section" id="benefits">
+        <div class="container">
+            <h2 class="section__title">Почему выбирают работы Екатерины Борисовой</h2>
+            <div class="benefits__grid">
+                <div class="benefit-item">
+                    <h3>Живая фактура</h3>
+                    <p>Рельеф, переплетения, объём — это ручная работа, которую хочется трогать. Никакой печати.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Акустический комфорт</h3>
+                    <p>Гобелен поглощает звук, делая комнату тише — особенно ценно в студиях и скандинавских интерьерах.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Зонирование без стен</h3>
+                    <p>Крупное панно выделяет обеденную или рабочую зону в открытом пространстве.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Абсолютная уникальность</h3>
+                    <p>Даже при повторении сюжета фактура будет другой — вы получаете единственный экземпляр.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ПОРТФОЛИО (ЛЕНТА) ===== -->
+<section class="portfolio section section--dark" id="portfolio">
+    <div class="container">
+        <h2 class="section__title">Примеры работ</h2>
+        <p class="portfolio__intro">Каждая работа в этой ленте — отдельная история. Листайте вниз, чтобы познакомиться с ними поближе.</p>
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">Все работы</button>
+            <button class="filter-btn" data-filter="gobelen">Гобелены</button>
+            <button class="filter-btn" data-filter="punch">Punch needle</button>
+            <button class="filter-btn" data-filter="painting">Живопись</button>
+        </div>
+        <div class="work-list" id="workList">
+            <!-- Сюда JavaScript добавит карточки работ -->
+        </div>
+    </div>
+</section>
+
+    <!-- ===== ОТЗЫВЫ (реальные, из соцсетей) ===== -->
+<section class="section" id="reviews" style="background:#F8F3ED;">
+    <div class="container">
+        <h2 class="section__title">Что говорят клиенты</h2>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:30px;">
+
+            <!-- Отзыв 1 -->
+            <div style="background:#fff; padding:25px; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column;">
+                <img src="images/reviews/review1.png" alt="Гобелен Ангел в детской" style="width:100%; border-radius:12px; margin-bottom:12px;" />
+                <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                    <span style="font-weight:700; color:#2B3A42;">Юлия</span>
+                    <a href="#" style="color:#C69B6D; font-size:0.85rem; text-decoration:none;">@iulia.ceramics</a>
+                </div>
+                <p style="font-style:italic; flex:1;">«Великолепная работа! Были учтены все пожелания по цветовой палитре и размерам! Ангелок поселился в детской комнате. Катя, благодарю! 😊»</p>
+                <div style="margin-top:15px; font-size:0.85rem; color:#888; border-top:1px solid #eee; padding-top:10px;">
+                    📍 детская комната, гобелен «Ангел»
+                </div>
+            </div>
+
+            <!-- Отзыв 2 -->
+            <div style="background:#fff; padding:25px; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column;">
+                <img src="images/reviews/review2.jpg" alt="Гобелен Древо" style="width:100%; border-radius:12px; margin-bottom:12px;" />
+                <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                    <span style="font-weight:700; color:#2B3A42;">Полина</span>
+                    <a href="#" style="color:#C69B6D; font-size:0.85rem; text-decoration:none;">@pollidomi</a>
+                </div>
+                <p style="font-style:italic; flex:1;">«Мы с мальчиками очень любим этот гобелен. Для меня он про что-то очень доброе из Винни-Пуха... Такое природное переплетение ниточек, им кажется, сам лес сплёл про себя картинку. Отдельный восторг от композиции — эта широта, мощь дерева!»</p>
+                <div style="margin-top:15px; font-size:0.85rem; color:#888; border-top:1px solid #eee; padding-top:10px;">
+                    📍 гостиная, гобелен «Древо»
+                </div>
+            </div>
+
+            <!-- Отзыв 3 -->
+            <div style="background:#fff; padding:25px; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column;">
+                <img src="images/reviews/review3.jpg" alt="Гобелен Осень" style="width:100%; border-radius:12px; margin-bottom:12px;" />
+                <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                    <span style="font-weight:700; color:#2B3A42;">Мария</span>
+                    <span style="color:#888; font-size:0.85rem;">(из переписки)</span>
+                </div>
+                <p style="font-style:italic; flex:1;">«Гобелен доехал очень быстро! В целости и сохранности! Он чудесный — тёплая яркая осень, которой мне здесь очень не хватает. Очень приятная упаковка и невероятные открытки!»</p>
+                <div style="margin-top:15px; font-size:0.85rem; color:#888; border-top:1px solid #eee; padding-top:10px;">
+                    📍 гостиная, гобелен «Осень»
+                </div>
+            </div>
+
+            <!-- Отзыв 4 (дополнительный, чтобы было 4, но можно оставить 3) -->
+            <div style="background:#fff; padding:25px; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column;">
+                <img src="images/reviews/review4.jpg" alt="Гобелен Ёжик" style="width:100%; border-radius:12px; margin-bottom:12px;" />
+                <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                    <span style="font-weight:700; color:#2B3A42;">Анна</span>
+                    <span style="color:#888; font-size:0.85rem;">(из переписки)</span>
+                </div>
+                <p style="font-style:italic; flex:1;">«Гобелен вживую такой тактильный и такие потрясающие оттенки. И упаковка такая приятная. Ёжик прекрасный!»</p>
+                <div style="margin-top:15px; font-size:0.85rem; color:#888; border-top:1px solid #eee; padding-top:10px;">
+                    📍 детская, гобелен «Ёжик»
+                </div>
+            </div>
+
+            <div style="background:#fff; padding:25px; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column;">
+                <img src="images/reviews/review5.png" alt="Гобелен Волчонок" style="width:100%; border-radius:12px; margin-bottom:12px;" />
+                <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                    <span style="font-weight:700; color:#2B3A42;">marina_pyatykh</span>
+                    <span style="color:#888; font-size:0.85rem;">(из переписки)</span>
+                </div>
+                    <div style="margin-top:15px; font-size:0.85rem; color:#888; border-top:1px solid #eee; padding-top:10px;">
+                    📍 спальня, гобелен «Волчонок»
+                    </div>
+            </div>
+
+<!-- Отзыв 6 (ВАШ, ИСПРАВЛЕННЫЙ) -->
+<div style="background:#fff; padding:25px; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column;">
+    <img src="images/reviews/review6.png" alt="Гобелен Ангел в детской" style="width:100%; border-radius:12px; margin-bottom:12px;" />
+    <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+        <span style="font-weight:700; color:#2B3A42;">Настя</span>
+        <span style="color:#888; font-size:0.85rem;">(из переписки)</span>
+    </div>
+    <p style="font-style:italic; flex:1;">«Как только увидела похожее панно в ленте, поняла — оно моё! Оно добавит в интерьер красок и тепла, так нужных мне. Муж сначала скептически отнёсся, а теперь сам подходит и разглядывает фактуру. Спасибо, Катюша!»</p>
+    <div style="margin-top:15px; font-size:0.85rem; color:#888; border-top:1px solid #eee; padding-top:10px;">
+        📍 гостиная, гобелен «Облако»
+    </div>
+</div>
+
+</div>
+
+
+        </div>
+        <p style="text-align:center; margin-top:30px; font-size:0.95rem; color:#4A4540;">
+            📸 Все отзывы — из реальной переписки. <a href="https://vk.com/public_katia_art_thread" target="_blank" style="color:#A85751; font-weight:500;">Читать ещё в VK</a>
+        </p>
+    </div>
+</section>
+
+    <!-- ===== ВЫСТАВКИ ===== -->
+    <section class="exhibitions section" id="exhibitions">
+        <div class="container">
+            <h2 class="section__title">Выставки и проекты</h2>
+            <ul class="exhibitions__list">
+                <li><span class="exhibition-year">2026</span> <span class="exhibition-title">«Тропинка из детства»</span>, персональная выставка, Центральная библиотека им. Горького, Пермь</li>
+                <li><span class="exhibition-year">2026</span> <span class="exhibition-title">«Сага о птицах»</span>, коллективная выставка произведений ДПИ, Пермская Арт-резиденция</li>
+                <li><span class="exhibition-year">2026</span> <span class="exhibition-title">«Крик Башни»</span>, выставка в рамках благотворительного ивента, Обычная галерея, Пермь</li>
+                <li><span class="exhibition-year">2026</span> <span class="exhibition-title">«Древо»</span>, совместный проект, международная выставка-ярмарка искусств, Нижний Новгород</li>
+                <li><span class="exhibition-year">2025</span> <span class="exhibition-title">«Я есть»</span>, Соликамский краеведческий музей, Соликамск</li>
+                <li><span class="exhibition-year">2025</span> <span class="exhibition-title">«Над миром мир»</span>, проект Пермского отделения ВТОО «Союз художников России», ЦВЗ, Пермь</li>
+                <li><span class="exhibition-year">2024</span> <span class="exhibition-title">«Моя песнь»</span>, персональная выставка, Центральная библиотека им. Пушкина, Пермь</li>
+                <li><span class="exhibition-year">2024</span> <span class="exhibition-title">«Кто рассыпал эти звёзды»</span>, галерея Анастасии Поповой, Пермь</li>
+                <li><span class="exhibition-year">2024</span> <span class="exhibition-title">«Мой дом»</span>, персональная выставка, Пермская Арт-резиденция</li>
+                <li><span class="exhibition-year">2023</span> <span class="exhibition-title">«Накануне перемен»</span>, выставка ДПИ, Дом художника, Пермь</li>
+                <li><span class="exhibition-year">2021</span> <span class="exhibition-title">«Платье»</span>, проект пространства фонда «Четверг», Москва</li>
+                <li><span class="exhibition-year">2019</span> <span class="exhibition-title">«Россия XIII»</span>, Всероссийская художественная выставка, Москва</li>
+                <li><span class="exhibition-year">2018</span> <span class="exhibition-title">«Большая Волга XII»</span>, выставка произведений художников ПФО, Нижний Новгород</li>
+                <li><span class="exhibition-year">2012</span> <span class="exhibition-title">«Пейзаж-2012»</span>, международная выставка, Кирилло-Белозерский музей-заповедник (филиал «Музей фресок Дионисия»), Кириллов</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section--dark" id="faq">
+        <div class="container">
+            <h2 class="section__title">Часто задаваемые вопросы</h2>
+            <div style="max-width:700px; margin:0 auto;">
+                <div style="margin-bottom:25px; border-bottom:1px solid rgba(44,42,40,0.1); padding-bottom:15px;">
+                    <h3 style="font-size:1.1rem; font-weight:bold; color:#2B3A42;">Сколько стоит гобелен?</h3>
+                    <p style="color:#4A4540;">От 7 000 ₽ за панно 30×40 см. Итоговая цена зависит от размера и сложности.</p>
+                </div>
+                <div style="margin-bottom:25px; border-bottom:1px solid rgba(44,42,40,0.1); padding-bottom:15px;">
+                    <h3 style="font-size:1.1rem; font-weight:bold; color:#2B3A42;">Как долго ждать?</h3>
+                    <p style="color:#4A4540;">Это зависит от размера, замысла и сложности исполнения работы. В среднем от 2-х до 8-ми недель, но каждый случай индивидуален.</p>
+                </div>
+                <div style="margin-bottom:25px; border-bottom:1px solid rgba(44,42,40,0.1); padding-bottom:15px;">
+                    <h3 style="font-size:1.1rem; font-weight:bold; color:#2B3A42;">Как я получу работу?</h3>
+                    <p style="color:#4A4540;">Отправка по России СДЭКом или Почтой. В Перми возможен самовывоз.</p>
+                </div>
+                <div style="margin-bottom:25px; border-bottom:1px solid rgba(44,42,40,0.1); padding-bottom:15px;">
+    <h3 style="font-size:1.1rem; font-weight:bold; color:#2B3A42;">Можно ли заказать повтор проданной работы?</h3>
+    <p style="color:#4A4540;">Да, но фактура будет уникальной — это не копия, а новая авторская интерпретация. При этом вы сохраняете полюбившуюся композицию и цветовое решение, а каждая работа остаётся эксклюзивной.</p>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== КОНТАКТЫ ===== -->
+<section class="contacts section" id="contacts">
+    <div class="container">
+        <h2 class="section__title">Создайте ваш гобелен</h2>
+        <div class="contacts__inner">
+            <p class="contacts__lead">Напишите Екатерине, и она:</p>
+            <ul class="contacts__list">
+                <li>✔️ подберёт размер и цвета под ваш интерьер;</li>
+                <li>✔️ сделает эскиз;</li>
+                <li>✔️ назовёт точную цену и сроки.</li>
+            </ul>
+            <p><strong>ВКонтакте:</strong> <a href="https://vk.com/public_katia_art_thread" target="_blank">vk.com/public_katia_art_thread</a></p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/katia_borisova" target="_blank">@katia_borisova</a></p>
+            <p><strong>Email:</strong> <a href="mailto:borek89@mail.ru">borek89@mail.ru</a></p>
+            <a href="https://vk.com/public_katia_art_thread" class="btn btn--primary" target="_blank">Написать в VK и рассчитать стоимость</a>
+        </div>
+    </div>
+</section>
+
+    <!-- ===== ПОДВАЛ ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Екатерина Борисова. Все права защищены.</p>
+            <p><a href="privacy.html">Политика конфиденциальности</a></p>
+        </div>
+    </footer>
+
+    <!-- ===== COOKIE-БАННЕР ===== -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-consent__text">
+            Продолжая использовать сайт, вы даете согласие на обработку
+            <a href="privacy.html" target="_blank">персональных данных</a>,
+            файлов cookie и пользовательских данных с помощью
+            метрической программы Яндекс.Метрика.
+        </div>
+        <button class="cookie-consent__btn" id="acceptCookies">Хорошо</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
